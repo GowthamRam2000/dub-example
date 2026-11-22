@@ -1,6 +1,6 @@
 """Language codes and the Indic-Speak voice library.
 
-Mirrors scripts/bodhan_api_rules.json at the repo root, copied here so the recipe
+Mirrors scripts/bodhan_api_rules.json in the Bodhan AI Cookbook, copied here so the recipe
 stays self-contained when installed on its own.
 """
 

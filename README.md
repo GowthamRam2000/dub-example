@@ -6,6 +6,8 @@
 **Languages shown:** Hindi, Tamil, Bengali (any of the 22 Indic-Speak languages via `--langs`)
 **Format:** CLI (`python -m bodhan_dub`)
 
+> This is a standalone copy of the recipe I submitted to the [Bodhan AI Cookbook](https://github.com/Bodhan-AI/Bodhan-AI-Cookbook) as [PR #82](https://github.com/Bodhan-AI/Bodhan-AI-Cookbook/pull/82) (`examples/video_dubbing`), with its full commit history.
+
 ## What it does
 
 Give it one English video (MP4, MOV, MKV or WebM, 1–15 minutes, one or more speakers). For every requested language it writes a dubbed MP4, a subtitle file and a per-segment JSON trail, plus one `report.json` that scores the run against the quality targets: sync, stretch, coverage, back-transcription CER, length and loudness.
@@ -25,7 +27,7 @@ Design notes, the architecture diagram and the workflow flow chart are in **[doc
 System dependency: **ffmpeg** with ffprobe on `PATH` (`brew install ffmpeg`, `apt-get install ffmpeg`). Python 3.12+.
 
 ```bash
-cd examples/video_dubbing
+git clone https://github.com/GowthamRam2000/dub-example.git && cd dub-example
 uv sync                      # or: python -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt -e .
 source .venv/bin/activate
 cp .env.example .env         # fill in the Bodhan keys and an LLM endpoint
